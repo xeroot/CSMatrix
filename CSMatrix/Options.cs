@@ -16,7 +16,7 @@ namespace CSMatrix
         [Option('u', Default = 4, HelpText = "Screen update delay (0 - 10)")]
         public int Delay { get; set; }
 
-        [Option('C', Default = "green", HelpText = " Use this color for matrix")]
+        [Option('C', Default = "green", HelpText = "Use this color for matrix")]
         public string Color { get; set; }
 
     }
