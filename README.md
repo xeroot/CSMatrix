@@ -24,7 +24,7 @@ In order to execute it from cmd anywhere, you need to add the binary to the path
 
 ### Usage
 
-Just type csmatrix and optional arguments.
+Just type csmatrix and optional arguments. To quit press **q** key.
 
 ```cmd
 D:\> csmatrix -u 6 -C red -o
