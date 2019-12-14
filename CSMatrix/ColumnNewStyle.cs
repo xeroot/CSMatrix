@@ -10,7 +10,6 @@ namespace CSMatrix
     {
         public int X;
         public int fullSize;
-        //private WormGenerator wormGenerator;
         private List<Worm> worms;
         private char[] chars;
 
@@ -19,11 +18,10 @@ namespace CSMatrix
             X = XPos;
             fullSize = size;
             chars = new char[size];
-            //wormGenerator = new WormGenerator(size);
             worms = new List<Worm>
             {
                 WormGenerator.Create(fullSize)
-            };
+            }; 
 
             for (int i = 0; i < size; i++)
                 chars[i] = ' ';
@@ -40,14 +38,6 @@ namespace CSMatrix
                 worms.Add(WormGenerator.Create(fullSize));
 
             var firstWorm = worms.First();
-            //if (X == 0)
-            //{
-            //    if (firstWorm.Y == fullSize + 1)
-            //    {
-            //        counter++;
-            //        Console.Title = string.Format("ms:{0}, times:{1}, hash:{2}", (DateTime.Now - firstWorm.BirthDate).Milliseconds, counter, firstWorm.GetHashCode());
-            //    }
-            //}
             if (firstWorm.Y >= firstWorm.Size + fullSize)
                 worms.Remove(firstWorm);
 

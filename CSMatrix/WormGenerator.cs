@@ -25,7 +25,7 @@ namespace CSMatrix
 
             char[] chars = new char[maxSize];
             for (int i = 0; i < maxSize; i++)
-                chars[i] = GetRandomChar();
+                chars[i] = CharUtils.GetRandomChar();
 
             return new Worm(spaceSize, charSize, chars);
         }
@@ -38,7 +38,7 @@ namespace CSMatrix
 
             char[] chars = new char[maxSize];
             for (int i = 0; i < maxSize; i++)
-                chars[i] = GetRandomChar();
+                chars[i] = CharUtils.GetRandomChar();
             return new Worm(spaceSize, charSize, chars);
         }
 
@@ -69,14 +69,5 @@ namespace CSMatrix
             charSize = random.Next(5, 20 + maxSize / 4);
         }
 
-
-        private static char GetRandomChar()
-        {
-            if (random.Next(100) < 25) return (char)random.Next(33, 127);
-            int numberOrCharProb = random.Next(100);
-            if (numberOrCharProb < 33) return (char)random.Next(48, 58);
-            else if (numberOrCharProb < 66) return (char)random.Next(65, 91);
-            else return (char)random.Next(97, 123);
-        }
     }
 }

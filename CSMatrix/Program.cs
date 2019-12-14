@@ -50,10 +50,8 @@ namespace CSMatrix
                         }
                     }
                     if (option.Color.ToLower() != ScrollColors.Default.Key)
-                    {
                         Console.ForegroundColor = ScrollColors.Parse(option.Color);
-                    }
-                    else Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    else Console.ForegroundColor = ScrollColors.Default.Value;
                 })
                 .WithNotParsed<Options>(option =>
                 {
@@ -82,7 +80,6 @@ namespace CSMatrix
         private static async void StartAsync()
         {
             RefreshSizeAndColumns();
-
             while (!exitPressed)
             {
                 if (scrollStyle == ScrollStyle.NewStyle)
@@ -126,12 +123,6 @@ namespace CSMatrix
             foreach (var column in oldStyleColumns)
                 newLine += column.GetNextChar();
             lines[0] = newLine;
-        }
-
-        private static char GetRandomChar(Random random)
-        {
-            if (random.Next(100) < 10) return ' ';
-            return (char)random.Next(33, 125);
         }
 
         private static bool IsSizeChanged()

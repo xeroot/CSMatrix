@@ -23,7 +23,7 @@ namespace CSMatrix
         {
             if (colors.ContainsKey(colorStr.ToLower()))
                 return colors[colorStr.ToLower()];
-            else return ConsoleColor.DarkGreen;
+            else return Default.Value;
         }
 
     }
