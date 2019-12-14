@@ -24,13 +24,13 @@ namespace CSMatrix
 
         static void Main(string[] args)
         {
-            SetDefaultOptions();
+            HideCursor();
             ParseArguments(args);
             StartAsync();
             ExitIfQPressed();
         }
 
-        private static void SetDefaultOptions()
+        private static void HideCursor()
         {
             Console.CursorVisible = false;
         }
