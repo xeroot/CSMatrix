@@ -7,8 +7,8 @@
     <ProjectGuid>{3E6D2D5A-8723-42D0-8FCA-1F80729DA509}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSMatrix</RootNamespace>
-    <AssemblyName>CSMatrix</AssemblyName>
+    <RootNamespace>csmatrix</RootNamespace>
+    <AssemblyName>csmatrix</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>1b8bc1a5</NuGetPackageImportStamp>
