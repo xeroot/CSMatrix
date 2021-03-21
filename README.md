@@ -10,9 +10,9 @@ An imitation of cmatrix made in C# for Windows :D.
 
 ### Animation
 
-This is how csmatrix looks like
+This is how csmatrix looks like...
 
-![alt text](https://s5.gifyu.com/images/csmatrix.gif)
+![csmatrix2](https://user-images.githubusercontent.com/30216410/111922257-d5036980-8a66-11eb-8103-74f6639b91e0.gif)
 
 ### Installation
 
